@@ -1,0 +1,6 @@
+# Folders
+build/
+c++/build/
+
+# Misc
+.DS_Store

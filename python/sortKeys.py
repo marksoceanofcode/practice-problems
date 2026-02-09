@@ -1,11 +1,13 @@
-import json #Import the json library?
+import json #Import the json library
+import re # Import the re library (the regular expression library)
 
 #Format key function
 def formatKey(key):
-    return key.lower().replace(" ", "_") # Really similar to JS
+    fmtKey = re.sub(r'[^a-zA-Z0-9]', "_", key) # re.sub allows for regex(pattern) use where .replace() is a string literal for a string
+    return fmtKey.lower().replace(" ", "_") # Really similar to JS
 
 # Sample JSON Data
-jsonString = '{"first Name": "Mark", "Last Name": "Ocean of Code", "age": 25, "Address": "123 Main St", "email": "alice@example.com", "jOb Title": "Software Engineer"}'
+jsonString = '{"first Name": "Mark", "Last Name": "Ocean of Code", "age": 25, "Address": "123 Main St", "email": "alice@example.com", "jOb Title": "Software Engineer", "company*Name": "Generic Company"}'
 data = json.loads(jsonString) # Converts the JSON string to a dictionary
 
 # Get the keys
