@@ -1,6 +1,8 @@
 # Folders
 build/
 c++/build/
+c#/bin
+c#/obj
 java/build/
 
 # Misc
