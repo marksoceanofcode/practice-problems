@@ -4,6 +4,13 @@ Problem: Given an integer n, return a string array answer (1-indexed) where:
 - answer[i] == "Fizz" if i is divisble by 3.
 - answer[i] == "Buzz" if i is divisible by 5.
 - anwser[i] == i (as a string) if none of the above conditions are true.
+
+Run:
+dotnet run //Runs the project
+or
+dotnet run --file fizzbuzz.cs
+or
+dotnet run fizzbuzz.cs //if no project file
 */
 
 using System.Collections.Generic;
