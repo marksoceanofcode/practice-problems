@@ -13,8 +13,8 @@ or
 dotnet run fizzbuzz.cs //if no project file
 */
 
-using System.Collections.Generic;
-using System; //Includes helpful things like Console and WriteLine
+//using System.Collections.Generic; //Implicility added by modern .net
+//using System; //Includes helpful things like Console and WriteLine //Implicility added by modern .net
 
 class FizzBuzz //We can name this whatever we want unlike Java
 {
